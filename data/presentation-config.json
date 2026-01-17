@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "reportTitle": "Informe de avance",
+    "university": "Broward International University",
+    "course": "Sostenibilidad y evaluación de los recursos virtuales de aprendizaje",
+    "courseCode": "EVED7013",
+    "professor": "Dra. Anaylen López",
+    "date": "2026",
+    "presenters": [
+      {
+        "name": "Yesmín Cantillo Brochero"
+      },
+      {
+        "name": "María Teresa Del Niño Jesús Parra Gil"
+      },
+      {
+        "name": "Jefferson Johan Soto González"
+      },
+      {
+        "name": "Adriana Zárate Carvajal"
+      }
+    ]
+  },
+  "presenters": ["Adriana", "Yesmin", "Teresa", "Jefferson"],
+  "introduction": {
+    "slide1": {
+      "title": "Recursos Educativos Abiertos",
+      "content": "En el contexto actual de la educación digital, los Recursos Educativos Abiertos se han convertido en una herramienta clave para democratizar el acceso al conocimiento. Según la UNESCO, estos recursos permiten aprender, adaptar y compartir contenidos de manera gratuita, superando barreras económicas y legales. Sin embargo, para que realmente cumplan su propósito en la educación superior, es fundamental que exista una gestión adecuada que garantice su calidad, accesibilidad y sostenibilidad."
+    },
+    "slide2": {
+      "title": "Estudio de Caso: Universidad de Costa Rica",
+      "content": "A raíz de ello, el presente trabajo analiza un estudio de caso en la Universidad de Costa Rica, específicamente en la Sede de Occidente, donde se identifican fortalezas institucionales, pero también desafíos en la implementación práctica de REA. Con base en este diagnóstico, se propone una innovación que integra el uso responsable de la Inteligencia Artificial con estándares de calidad, con el fin de fortalecer la producción de recursos educativos inclusivos, sostenibles y alineados con la misión humanista de la universidad."
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Nos pueden contextualizar y mencionar la institución seleccionada?",
+        "assignedPresenter": "Adriana"
+    },
+    {
+      "id": 2,
+      "question": "¿Cómo se visualiza la sostenibilidad en la UCR?",
+        "assignedPresenter": "Adriana"
+    },
+    {
+      "id": 3,
+      "question": "¿Cómo se visualiza desde la UCR el ámbito de la IA y los REA?",
+        "assignedPresenter": "Yesmin"
+    },
+    {
+      "id": 4,
+      "question": "¿Desde el análisis realizado, cuáles son las fortalezas, oportunidades, debilidades amenazas de la UCR?",
+        "assignedPresenter": "Adriana"
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál es su propuesta de innovación?",
+        "assignedPresenter": "Jefferson"
+    },
+    {
+      "id": 6,
+      "question": "¿Cuál es la metodología y fases de la propuesta?",
+        "assignedPresenter": "Jefferson"
+    },
+    {
+      "id": 7,
+      "question": "¿ Desde dónde se basan para plantear su propuesta? ",
+        "assignedPresenter": "Adriana"
+    },
+    {
+      "id": 8,
+      "question": "¿Cómo reflexión final que nos podrían comentar?",
+        "assignedPresenter": "Yesmin"
+        
+    }
+  ],
+"reflections": {
+  "title": "Reflexiones Finales",
+  "items": [
+    "A partir del análisis institucional, se concluye que la sostenibilidad educativa implica transformar las prácticas pedagógicas mediante la integración de los Recursos Educativos Abiertos, favoreciendo sistemas más accesibles, equitativos e inclusivos, capaces de atender la diversidad y promover aprendizajes significativos y contextualizados.",
+    "El uso de los REA debe realizarse desde una perspectiva ética y responsable, especialmente cuando se integra la inteligencia artificial, tomando como referencia la norma UNE 71362.",
+    "Se destaca que la sostenibilidad educativa depende también de la consolidación de una cultura académica abierta, basada en la participación activa de la comunidad universitaria, el reconocimiento de la diversidad regional y el compromiso social de la educación superior."
+  ]
+},
+  "closing": {
+    "invitationText": "¡Momento de Preguntas!",
+    "invitationSubtext": "Ahora es tu turno.",
+    "assignedQaPresenter": "Jefferson" 
+  }
+}
+
