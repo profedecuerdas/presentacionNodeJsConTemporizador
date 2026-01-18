@@ -79,3 +79,69 @@ Para que tus archivos de notas sean efectivos, asegúrate de incluir estos conce
 > **Nota sobre el Token (PAT):** Recuerda que al hacer el `push`, GitHub te pedirá tu usuario (`profedecuerdas`) y el token de acceso personal que generamos anteriormente en lugar de tu contraseña.
 
 ¿Te gustaría que redactara un ejemplo de flujo de trabajo diario para tu archivo `notas-para-subir-a-git.txt`?
+
+
+
+==================
+10/restaurado$ git push -u origin main
+error: src refspec main no concuerda con ninguno
+error: falló el empuje de algunas referencias a 'https://github.com/profedecuerdas/presentacionNodeJsConTemporizador.git'
+a@a-IdeaPad-Slim-3-14IAH8:~/Documentos/sustainability-ved7013/sem10/restaurado$
+
+Este error ocurre frecuentemente cuando intentamos realizar un `push` en un repositorio recién inicializado pero **aún no hemos realizado ningún commit local**. Para Git, la rama `main` no "existe" realmente hasta que tiene al menos un punto de guardado (commit).
+
+Como acabas de re-vincular tu carpeta en **Linux Mint**, sigamos estos pasos para asegurar que todo esté en orden antes de subir tus notas de estudio:
+
+### 1. Asegura que los archivos estén en el "Escenario" (Staging)
+
+Primero, confirma que Git está siguiendo tus archivos nuevos y las configuraciones que restauramos:
+
+```bash
+git add .
+
+```
+
+### 2. Crea el Commit (El punto de guardado)
+
+Este es el paso que probablemente falta. Sin un commit, no hay nada que enviar a GitHub:
+
+```bash
+git commit -m "Restauración de archivos de configuración y guías de estudio"
+
+```
+
+### 3. Fuerza el nombre de la rama a 'main'
+
+A veces, por defecto, Git inicia en una rama llamada `master`. Debemos asegurarnos de que se llame `main` para que coincida con tu repositorio en línea:
+
+```bash
+git branch -M main
+
+```
+
+### 4. Intenta el Envío (Push) nuevamente
+
+Ahora que ya tienes un commit y la rama se llama correctamente, el comando debería funcionar:
+
+```bash
+git push -u origin main
+
+```
+
+---
+
+### ¿Qué hacer si el error persiste?
+
+Si después de hacer el commit sigues viendo el error, es posible que haya una discrepancia con el historial previo de GitHub. Puedes intentar "sincronizar por la fuerza" una sola vez para establecer esta nueva estructura como la definitiva:
+
+```bash
+# Úsalo solo si el paso anterior falla
+git push -u origin main --force
+
+```
+
+**Nota para tu archivo `notas-para-subir-a-git.txt`:**
+
+> El error "src refspec main does not match any" casi siempre significa: **"Olvidaste hacer el git commit antes del git push"**.
+
+¿Te gustaría que verifiquemos si los archivos ya aparecen visibles en tu cuenta de GitHub después de realizar estos pasos?
