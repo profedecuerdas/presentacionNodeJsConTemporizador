@@ -1,0 +1,81 @@
+Es una excelente iniciativa crear tus propias guías de estudio. Tener estos procedimientos documentados en tu propio entorno de trabajo te ayudará a ganar mucha agilidad y confianza con la terminal de **Linux Mint**.
+
+Para actualizar tu repositorio en **GitHub** con estos nuevos archivos de texto, sigue estos pasos:
+
+### 1. Re-vincular tu carpeta con GitHub
+
+Como la carpeta `.git` fue eliminada anteriormente, primero debemos establecer la conexión de nuevo:
+
+1. **Inicializar Git:**
+```bash
+git init
+
+```
+
+
+2. **Configurar tu identidad (si no lo has hecho globalmente):**
+```bash
+git config user.email "profedecuerdas@gmail.com"
+git config user.name "Jefferson Soto"
+
+```
+
+
+3. **Vincular el repositorio remoto:**
+```bash
+git remote add origin https://github.com/profedecuerdas/presentacionNodeJsConTemporizador.git
+
+```
+
+
+4. **Sincronizar el historial:**
+Ejecuta estos dos comandos para que tu computadora reconozca lo que ya está en la nube y no haya conflictos:
+```bash
+git fetch origin
+git reset --mixed origin/main
+
+```
+
+
+
+---
+
+### 2. Subir tus nuevos archivos de notas
+
+Ahora que la carpeta está vinculada, procede a guardar los cambios:
+
+1. **Añadir los archivos:**
+```bash
+git add notas-para-limpiar-el-entorno.txt notas-para-subir-a-git.txt
+
+```
+
+
+*También puedes usar `git add .` para incluir cualquier otro cambio pendiente en los archivos de configuración.*
+2. **Crear el punto de guardado (Commit):**
+```bash
+git commit -m "Añadir guías de estudio para procedimientos de Git y limpieza de entorno"
+
+```
+
+
+3. **Enviar a GitHub:**
+```bash
+git push -u origin main
+
+```
+
+
+
+---
+
+### 3. Resumen de los comandos que estás guardando
+
+Para que tus archivos de notas sean efectivos, asegúrate de incluir estos conceptos clave:
+
+* **Para limpiar:** `rm -rf node_modules .next` es la forma más rápida de dejar el código fuente puro.
+* **Para Git:** El ciclo siempre es **Add** (preparar) -> **Commit** (guardar local) -> **Push** (subir a la nube).
+
+> **Nota sobre el Token (PAT):** Recuerda que al hacer el `push`, GitHub te pedirá tu usuario (`profedecuerdas`) y el token de acceso personal que generamos anteriormente en lugar de tu contraseña.
+
+¿Te gustaría que redactara un ejemplo de flujo de trabajo diario para tu archivo `notas-para-subir-a-git.txt`?

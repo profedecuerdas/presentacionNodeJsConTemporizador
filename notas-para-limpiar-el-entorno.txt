@@ -1,0 +1,29 @@
+rm -rf node_modules
+rm -rf node_modules .next
+
+
+Para limpiar completamente los archivos generados y dejar únicamente el código fuente de tu proyecto, el comando estándar en la terminal es:
+
+```bash
+rm -rf node_modules
+
+```
+
+Dado que tu proyecto está basado en **Next.js**, para una limpieza absoluta (incluyendo la caché de compilación y el entorno de ejecución), lo ideal es eliminar ambas carpetas generadas:
+
+```bash
+rm -rf node_modules .next
+
+```
+
+### Desglose del comando:
+
+* **`rm`**: El comando para eliminar (remove).
+* **`-r`**: Indica que la eliminación es recursiva (borra la carpeta y todo lo que hay dentro).
+* **`-f`**: Fuerza la eliminación sin pedir confirmación por cada archivo.
+
+### ¿Qué sucede después?
+
+Al ejecutar estos comandos, solo conservas tus archivos originales (carpetas `app`, `components`, `data`, `public`, y archivos de configuración como `package.json`). Cuando necesites volver a ejecutar o editar el proyecto, simplemente entra a la carpeta y escribe `npm install` para que el sistema descargue de nuevo todo lo necesario basándose en tu archivo `package.json`.
+
+¿Te gustaría que te ayude a añadir un script personalizado en tu `package.json` para que puedas realizar esta limpieza con un comando corto como `npm run clean` en el futuro?
