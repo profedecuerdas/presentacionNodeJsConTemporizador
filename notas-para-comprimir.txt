@@ -1,0 +1,34 @@
+Tu estructura de archivos está ahora en un estado **ideal**: solo contiene el código fuente, la lógica y la configuración, sin el "peso muerto" de las dependencias. Al haber eliminado `node_modules` y `.next`, el archivo resultante será extremadamente ligero y fácil de compartir o guardar.
+
+Aquí tienes el comando para comprimir todo lo que ves en tu `tree` en un único archivo desde tu terminal de **Linux Mint**:
+
+### Comando para compresión limpia
+
+Ejecuta lo siguiente en la raíz de tu carpeta `restaurado`:
+
+```bash
+zip -r respaldo_presentacion_sostenibilidad.zip . -x "*.git*" "node_modules/*" ".next/*"
+
+```
+
+---
+
+### Explicación de los parámetros utilizados:
+
+* **`zip -r`**: Indica que quieres crear un archivo comprimido de forma **recursiva**, incluyendo todas las subcarpetas (`app`, `components`, `data`, etc.).
+* **`respaldo_presentacion_sostenibilidad.zip`**: Es el nombre que recibirá tu archivo. Puedes cambiarlo si prefieres otro.
+* **`.`**: El punto le dice a Linux que comprima **todo** lo que se encuentra en el directorio actual.
+* **`-x` (Exclusiones)**: Aunque ya limpiaste la carpeta, este parámetro es una "red de seguridad". Evita que se incluyan carpetas ocultas de Git o cualquier residuo accidental de archivos pesados, asegurando que el ZIP sea lo más pequeño posible.
+
+### Verificación del respaldo
+
+Una vez que termine el proceso, puedes verificar el tamaño de tu nuevo archivo con:
+
+```bash
+ls -lh respaldo_presentacion_sostenibilidad.zip
+
+```
+
+Probablemente pesará **menos de 1 MB**, ya que solo contiene texto y la imagen del logo. Este es el "arte" de guardar código fuente: lo que importa son los planos (tu código), no los ladrillos (las librerías que `npm` descarga).
+
+¿Te gustaría que te ayude a redactar un pequeño párrafo para tu archivo `notas-para-limpiar-el-entorno.txt` que explique cómo usar este comando de compresión en el futuro?
